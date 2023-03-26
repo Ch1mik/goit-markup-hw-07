@@ -17,13 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Homework6</title>
+    <title>Homework7</title>
   </head>
   <body>
-    <!-- Шапка сторінки -->
+    <!-- /**
+      |============================
+      | Шапка сторінки
+      |============================
+    */ -->
     <header>
       <!-- Навігація на інші сторінки -->
-      <div class="container header-container">
+        <div class="container header-container">
         <nav class="header-nav">
           <a class="logo1" href="./index.html"
             ><span class="web">Web</span>Studio</a
@@ -34,8 +38,28 @@
             <li><a class="nav-link" href="#">Contacts</a></li>
           </ul>
         </nav>
+        <button 
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+         >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
         <!-- Контактні дані -->
-        <address>
+        
+       <address>
           <ul class="address-list">
             <li class="mail">
               <a class="address-link" href="mailto:info@devstudio.com"
@@ -51,17 +75,21 @@
         </address>
       </div>
     </header>
-    <!-- Контент сторінки -->
+    <!-- /**
+      |============================
+      | Контент сторінки
+      |============================
+    */ -->
     <main>
       <!--Секція заголовок  -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <div class="hero-content">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button type="button" class="hero-button" data-modal-open>Order Service</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Секція з рішеннями -->
       <section class="section features">
         <div class="container">
@@ -119,8 +147,8 @@
         </div>
       </section>
       <!--Секція "Що ми робимо?" -->
-      <section class="section items">
-        <div class="container">
+      <section class="section">
+        <div class="container items">
           <h2 class="section-title">What are we doing</h2>
           <ul class="flex-container">
             <li class="flex-element photo">
@@ -151,10 +179,10 @@
         </div>
       </section>
       <!-- Секція "Наша команда" -->
-      <section class="section team">
+       <section class="section team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
-          <ul class="flex-container">
+          <ul class="flex-container workers">
             <li class="flex-element card">
               <img
                 src="./images/man1.jpg"
@@ -326,7 +354,8 @@
           </ul>
         </div>
       </section>
-      <section>
+      <!-- Секція клієнти -->
+       <section>
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-icon-list">
@@ -376,7 +405,11 @@
         </div>
       </section>
     </main>
-    <!-- Підвал сторінки -->
+    <!-- /**
+      |============================
+      | Підвал сторінки
+      |============================
+    */ -->
     <footer>
         <div class="container footer-list">
              <div class="footer-logo">
@@ -428,7 +461,7 @@
                         <input class="footer-form-field" type="email" name="email" placeholder="E-mail" />
                       </label>
                         <button class="footer-btn" type="submit">Subscribe
-                          <svg class="footer-icon-btn" width="16" height="16">
+                          <svg class="footer-icon-btn" width="24" height="20">
                             <use href="./images/icons.svg#icon-send"></use>
                           </svg>
                         </button>
@@ -437,6 +470,11 @@
             </div>
         </div>
     </footer>
+    <!-- /**
+      |============================
+      | Modal form
+      |============================
+    */ -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-btn" type="button">
@@ -486,6 +524,42 @@
                  </form>
       </div>
     </div>
+      <!-- /**
+      |============================
+      | Modal menu
+      |============================
+    */ -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
