@@ -39,12 +39,12 @@
           </ul>
         </nav>
         <button 
-        class="menu-toggle hamburger js-open-menu"
+        class="menu-toggle burger js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
          >
-         <svg width="32" height="22">
-          <use href="./images/icons.svg#icon-charm-menu-hamburger"></use>
+         <svg class="" width="32" height="22">
+          <use href="./images/icons.svg#icon-hamburger"></use>
         </svg>
       </button>
         <!-- Контактні дані -->
@@ -72,14 +72,14 @@
     */ -->
     <main>
       <!--Секція заголовок  -->
-      <!-- <section class="hero">
+    <section class="hero">
         <div class="container">
           <div class="hero-content">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button type="button" class="hero-button" data-modal-open>Order Service</button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Секція з рішеннями -->
       <section class="section features">
         <div class="container">
@@ -142,28 +142,37 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="flex-container">
             <li class="flex-element photo">
-              <img
-                src="./images/img-1.jpg"
-                alt="Site desktop"
-                width="360"
-                height="300"
-              />
+                <picture>
+                  <source srcset="./images/monitor.jpg 1x, ./images/monitor@2x.jpg 2x" type="image/jpeg"/>
+                  <img
+                    src="./images/monitor.jpg"
+                    alt="Site desktop"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
             </li>
             <li class="flex-element photo">
-              <img
-                src="./images/img-2.jpg"
-                alt="Phone with different tabs"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x" type="image/jpeg"/>
+                <img
+                  src="./images/phone.jpg"
+                  alt="Phone with different tabs"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="flex-element photo">
-              <img
-                src="./images/img-3.jpg"
-                alt="Phone and laptop "
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x" type="image/jpeg"/>
+                <img
+                  src="./images/laptop.jpg"
+                  alt="Phone and laptop "
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -174,12 +183,15 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="flex-container workers">
             <li class="flex-element card">
+              <picture>
+                <source srcset="./images/product-des.jpg 1x, ./images/product-des@2x.jpg 2x" type="image/jpeg"/>
               <img
-                src="./images/man1.jpg"
+                src="./images/product-des.jpg"
                 alt="Product Designer"
                 width="264"
                 height="260"
               />
+              </picture>
               <div class="card-content">
                 <h3 class="name">Mark Guerrero</h3>
                 <p class="position">Product Designer</p>
@@ -216,12 +228,15 @@
               </div>
             </li>
             <li class="flex-element card">
-              <img
-                src="./images/man2.jpg"
-                alt="Frontend Developer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/frontend-dev.jpg 1x, ./images/frontend-dev@2x.jpg 2x" type="image/jpeg"/>
+                <img
+                  src="./images/frontend-dev.jpg"
+                  alt="Frontend Developer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="name">Tom Ford</h3>
                 <p class="position">Frontend Developer</p>
@@ -258,12 +273,15 @@
               </div>
             </li>
             <li class="flex-element card">
-              <img
-                src="./images/woman.jpg"
-                alt="Marketing"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/marketing.jpg 1x, ./images/marketing@2x.jpg 2x" type="image/jpeg"/>
+                <img
+                  src="./images/marketing.jpg"
+                  alt="Marketing"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="name">Camila Garcia</h3>
                 <p class="position">Marketing</p>
@@ -300,12 +318,15 @@
               </div>
             </li>
             <li class="flex-element card">
-              <img
-                src="./images/man4.jpg"
-                alt="UI Designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/designer.jpg 1x, ./images/designer@2x.jpg 2x" type="image/jpeg"/>
+                <img
+                  src="./images/designer.jpg"
+                  alt="UI Designer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="name">Daniel Wilson</h3>
                 <p class="position">UI Designer</p>
