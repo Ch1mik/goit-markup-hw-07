@@ -77,12 +77,12 @@ img {
   display: block;
 }
 
-section {
+.section {
   padding-top: 96px;
   padding-bottom: 96px;
 }
 @media screen and (min-width: 1200px) {
-  section {
+  .section {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -794,9 +794,10 @@ footer {
  transition: 250ms transform linear;
  padding: 72px 24px 24px 24px;
 }
-@media screen and (min-width: 320px){
+@media screen and (max-width: 767px){
   .modal{
     max-width: 398px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px){
